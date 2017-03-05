@@ -16,25 +16,43 @@ class Person: NSObject {
     private var no:String? // 使用私有标识符也不能获取到
     
     // 获取当前类的所有属性数组
-    static func propertyList() -> [String]{
-        var count: UInt32 = 0
-        
-        var result:[String] = []
-        // 获取类的属性列表
-        let list =  class_copyPropertyList(self, &count)
+//    static func propertyList() -> [String]{
+//        var count: UInt32 = 0
+//        
+//        var result:[String] = []
+//        // 获取类的属性列表
+//        let list =  class_copyPropertyList(self, &count)
+//
+//        print("属性的数量: \(count)")
+//        
+//        for i in 0..<Int(count){
+//            let pty = list?[i]
+//            // 获取属性的名称
+//            let cName =  property_getName(pty!)  // 对应c语言字符串
+//            
+//            // 转化成oc字符串
+//            let name = String(utf8String: cName!)
+//            result.append(name ?? "")
+//        }
+    
+        static func propertyList() -> [String]{
+            var count: UInt32 = 0
+    
+            var result:[String] = []
+            // 获取类的属性列表
+            let list =  class_copyPropertyList(self, &count)
+    
+            print("属性的数量: \(count)")
+    
+            for i in 0..<Int(count){
+                // 使用guard语法判断每一项是否有值,只要有一项为nil就不在执行后续的代码
+                guard let pty = list?[i],let cName = property_getName(pty),let name = String(utf8String: cName) else {
+                    continue
+                }
+                result.append(name)
+            }
 
-        print("属性的数量: \(count)")
-        
-        for i in 0..<Int(count){
-            let pty = list?[i]
-            // 获取属性的名称
-            let cName =  property_getName(pty!)  // 对应c语言字符串
-            
-            // 转化成oc字符串
-            let name = String(utf8String: cName!)
-            result.append(name ?? "")
-        }
-        
+    
         free(list)
         return result
     }
