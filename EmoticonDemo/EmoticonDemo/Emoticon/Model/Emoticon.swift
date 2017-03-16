@@ -44,12 +44,11 @@ class Emoticon: NSObject {
             return nil
         }
         guard let directory = directory,
-            let png = png,
-            let path = Bundle.main.path(forResource: "Emoticon.bundle", ofType: nil),
-            let bundle = Bundle(path: path)
+            let png = png
             else {
                 return nil
         }
+        let bundle = EmoticonManager.bundle
         return UIImage(named: "\(directory)/\(png)", in: bundle, compatibleWith: nil)
     }
     

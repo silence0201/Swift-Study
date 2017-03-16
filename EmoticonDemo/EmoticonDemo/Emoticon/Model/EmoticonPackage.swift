@@ -23,9 +23,7 @@ class EmoticonPackage: NSObject {
         didSet {
             // 当设置目录时，从目录下加载 info.plist
             guard let directory = directory,
-                let path = Bundle.main.path(forResource: "Emoticon.bundle", ofType: nil),
-                let bundle = Bundle(path: path),
-                let infoPath = bundle.path(forResource: "info.plist", ofType: nil, inDirectory: directory),
+                let infoPath = EmoticonManager.bundle.path(forResource: "info.plist", ofType: nil, inDirectory: directory),
                 let array = NSArray(contentsOfFile: infoPath) as? [[String: String]],
                 let models = NSArray.yy_modelArray(with: Emoticon.self, json: array) as? [Emoticon]
                 
