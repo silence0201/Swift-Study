@@ -13,6 +13,7 @@
 		E84EB8741E7AB19D00BCBC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8731E7AB19D00BCBC2A /* Assets.xcassets */; };
 		E84EB8771E7AB19D00BCBC2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8751E7AB19D00BCBC2A /* LaunchScreen.storyboard */; };
 		E84EB87F1E7AB1C700BCBC2A /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB87E1E7AB1C700BCBC2A /* MyLabel.swift */; };
+		E84EB8811E7ACF0100BCBC2A /* SILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8801E7ACF0100BCBC2A /* SILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E84EB8761E7AB19D00BCBC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E84EB8781E7AB19D00BCBC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84EB87E1E7AB1C700BCBC2A /* MyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
+		E84EB8801E7ACF0100BCBC2A /* SILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SILabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E84EB8751E7AB19D00BCBC2A /* LaunchScreen.storyboard */,
 				E84EB8781E7AB19D00BCBC2A /* Info.plist */,
 				E84EB87E1E7AB1C700BCBC2A /* MyLabel.swift */,
+				E84EB8801E7ACF0100BCBC2A /* SILabel.swift */,
 			);
 			path = TextKitDemo;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84EB8811E7ACF0100BCBC2A /* SILabel.swift in Sources */,
 				E84EB86F1E7AB19D00BCBC2A /* ViewController.swift in Sources */,
 				E84EB86D1E7AB19D00BCBC2A /* AppDelegate.swift in Sources */,
 				E84EB87F1E7AB1C700BCBC2A /* MyLabel.swift in Sources */,
