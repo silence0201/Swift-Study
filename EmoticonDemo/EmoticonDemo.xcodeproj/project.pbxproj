@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B042686D11C863A5D344BD59 /* Pods_EmoticonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90AD97CCDAD803C46A92AA60 /* Pods_EmoticonDemo.framework */; };
+		E84EB8561E7A8EE000BCBC2A /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8551E7A8EE000BCBC2A /* EmoticonManager.swift */; };
+		E84EB8591E7A8F1300BCBC2A /* Emoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8581E7A8F1300BCBC2A /* Emoticon.bundle */; };
+		E84EB85B1E7A8F2B00BCBC2A /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB85A1E7A8F2B00BCBC2A /* Emoticon.swift */; };
+		E84EB85D1E7A8F3800BCBC2A /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB85C1E7A8F3800BCBC2A /* EmoticonAttachment.swift */; };
+		E84EB85F1E7A8F4500BCBC2A /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB85E1E7A8F4500BCBC2A /* EmoticonPackage.swift */; };
 		E8E19DFE1E7A373100651734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E19DFD1E7A373100651734 /* AppDelegate.swift */; };
 		E8E19E001E7A373100651734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E19DFF1E7A373100651734 /* ViewController.swift */; };
 		E8E19E031E7A373100651734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E19E011E7A373100651734 /* Main.storyboard */; };
@@ -15,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28AD14AA64155808B7B0BAA0 /* Pods-EmoticonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoticonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-EmoticonDemo/Pods-EmoticonDemo.release.xcconfig"; sourceTree = "<group>"; };
+		90AD97CCDAD803C46A92AA60 /* Pods_EmoticonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmoticonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E307E601CE4124427274B837 /* Pods-EmoticonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmoticonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EmoticonDemo/Pods-EmoticonDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E84EB8551E7A8EE000BCBC2A /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		E84EB8581E7A8F1300BCBC2A /* Emoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticon.bundle; sourceTree = "<group>"; };
+		E84EB85A1E7A8F2B00BCBC2A /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		E84EB85C1E7A8F3800BCBC2A /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
+		E84EB85E1E7A8F4500BCBC2A /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
 		E8E19DFA1E7A373100651734 /* EmoticonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmoticonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E19DFD1E7A373100651734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8E19DFF1E7A373100651734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +43,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B042686D11C863A5D344BD59 /* Pods_EmoticonDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AB30014D9A5A92F18B2A1AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90AD97CCDAD803C46A92AA60 /* Pods_EmoticonDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26C6099FFF6FEAC49D618E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E307E601CE4124427274B837 /* Pods-EmoticonDemo.debug.xcconfig */,
+				28AD14AA64155808B7B0BAA0 /* Pods-EmoticonDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E84EB8541E7A8ECD00BCBC2A /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				E84EB8581E7A8F1300BCBC2A /* Emoticon.bundle */,
+				E84EB8571E7A8EFB00BCBC2A /* Model */,
+				E84EB8551E7A8EE000BCBC2A /* EmoticonManager.swift */,
+			);
+			path = Emoticon;
+			sourceTree = "<group>";
+		};
+		E84EB8571E7A8EFB00BCBC2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E84EB85A1E7A8F2B00BCBC2A /* Emoticon.swift */,
+				E84EB85C1E7A8F3800BCBC2A /* EmoticonAttachment.swift */,
+				E84EB85E1E7A8F4500BCBC2A /* EmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E8E19DF11E7A373100651734 = {
 			isa = PBXGroup;
 			children = (
 				E8E19DFC1E7A373100651734 /* EmoticonDemo */,
 				E8E19DFB1E7A373100651734 /* Products */,
+				26C6099FFF6FEAC49D618E36 /* Pods */,
+				0AB30014D9A5A92F18B2A1AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +108,7 @@
 		E8E19DFC1E7A373100651734 /* EmoticonDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E84EB8541E7A8ECD00BCBC2A /* Emoticon */,
 				E8E19DFD1E7A373100651734 /* AppDelegate.swift */,
 				E8E19DFF1E7A373100651734 /* ViewController.swift */,
 				E8E19E011E7A373100651734 /* Main.storyboard */,
@@ -71,9 +126,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8E19E0C1E7A373100651734 /* Build configuration list for PBXNativeTarget "EmoticonDemo" */;
 			buildPhases = (
+				5DBA99DB574ABAD683367EDF /* [CP] Check Pods Manifest.lock */,
 				E8E19DF61E7A373100651734 /* Sources */,
 				E8E19DF71E7A373100651734 /* Frameworks */,
 				E8E19DF81E7A373100651734 /* Resources */,
+				DBBE07368617874C8B2FE547 /* [CP] Embed Pods Frameworks */,
+				D3913E1AF63AD51C8ACF7557 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8E19E081E7A373100651734 /* LaunchScreen.storyboard in Resources */,
+				E84EB8591E7A8F1300BCBC2A /* Emoticon.bundle in Resources */,
 				E8E19E051E7A373100651734 /* Assets.xcassets in Resources */,
 				E8E19E031E7A373100651734 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +190,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DBA99DB574ABAD683367EDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3913E1AF63AD51C8ACF7557 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmoticonDemo/Pods-EmoticonDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBBE07368617874C8B2FE547 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EmoticonDemo/Pods-EmoticonDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8E19DF61E7A373100651734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84EB85D1E7A8F3800BCBC2A /* EmoticonAttachment.swift in Sources */,
+				E84EB8561E7A8EE000BCBC2A /* EmoticonManager.swift in Sources */,
+				E84EB85F1E7A8F4500BCBC2A /* EmoticonPackage.swift in Sources */,
 				E8E19E001E7A373100651734 /* ViewController.swift in Sources */,
 				E8E19DFE1E7A373100651734 /* AppDelegate.swift in Sources */,
+				E84EB85B1E7A8F2B00BCBC2A /* Emoticon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +369,7 @@
 		};
 		E8E19E0D1E7A373100651734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E307E601CE4124427274B837 /* Pods-EmoticonDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmoticonDemo/Info.plist;
@@ -270,6 +382,7 @@
 		};
 		E8E19E0E1E7A373100651734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AD14AA64155808B7B0BAA0 /* Pods-EmoticonDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EmoticonDemo/Info.plist;
@@ -299,6 +412,7 @@
 				E8E19E0E1E7A373100651734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,18 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let attache = NSTextAttachment()
-        
-        attache.image = UIImage (named: "d_aini")
-        let height = label.font.lineHeight
-        attache.bounds = CGRect(x: 0, y: -4, width: height, height: height)
-        
-        let attr = NSAttributedString(attachment: attache)
-        
-        let arrtM = NSMutableAttributedString(string: "我")
-        arrtM.append(attr)
-        label.attributedText = arrtM
+        let string = "我[爱你]啊[笑哈哈]!"
+        label.attributedText = EmoticonManager.shared.emoticonString(string: string, font: label.font)
     }
 
 }
