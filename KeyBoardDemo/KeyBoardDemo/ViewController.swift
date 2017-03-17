@@ -12,22 +12,55 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
+    lazy var emoticonView:EmoticonView = EmoticonView.inputView { [weak self] (em) in
+        self?.insertEmoticon(em:em)
+    }
+    
+    func insertEmoticon(em:Emoticon?){
+        guard let em = em else {
+            textView.deleteBackward()
+            return
+        }
+        
+        // emoji 字符串
+        if let emoji = em.emoji,let textRang = textView.selectedTextRange{
+            textView.replace(textRang, withText: emoji)
+            return
+        }
+        
+        // 插入图片
+        let imageText = em.imageText(font: textView.font!)
+        
+        // 记录原来的光标
+        let rang: NSRange = textView.selectedRange
+        
+        // 插入图片
+        let attrM = NSMutableAttributedString(attributedString: textView.attributedText)
+        // 插入到光标位置
+        attrM.replaceCharacters(in: rang, with: imageText)
+        // 设置属性文本
+        textView.attributedText = attrM
+        // 回复光标位置
+        textView.selectedRange = NSRange(location:rang.location+1, length: 0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let keyboardView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 253))
-        keyboardView.backgroundColor = UIColor.red
-        textView.inputView = keyboardView
-        
-        // 设置输入助理视图
-        let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 200, height: 44))
-        textView.inputAccessoryView = toolbar
-        
-        // 刷新输入视图
-        textView.reloadInputViews()
+        textView.inputView = emoticonView
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        textView.resignFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textView.becomeFirstResponder()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
         textView.resignFirstResponder()
     }
 

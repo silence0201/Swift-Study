@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A906EE3632128AE40B8FE9B6 /* Pods_KeyBoardDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2822DF2A12579C7506AF8832 /* Pods_KeyBoardDemo.framework */; };
 		E84EB88F1E7B81A900BCBC2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB88E1E7B81A900BCBC2A /* AppDelegate.swift */; };
 		E84EB8911E7B81A900BCBC2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8901E7B81A900BCBC2A /* ViewController.swift */; };
 		E84EB8941E7B81A900BCBC2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8921E7B81A900BCBC2A /* Main.storyboard */; };
 		E84EB8961E7B81A900BCBC2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8951E7B81A900BCBC2A /* Assets.xcassets */; };
 		E84EB8991E7B81A900BCBC2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8971E7B81A900BCBC2A /* LaunchScreen.storyboard */; };
+		E84EB8A71E7B877500BCBC2A /* Emoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8A11E7B877500BCBC2A /* Emoticon.bundle */; };
+		E84EB8A81E7B877500BCBC2A /* EmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8A21E7B877500BCBC2A /* EmoticonManager.swift */; };
+		E84EB8A91E7B877500BCBC2A /* Emoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8A41E7B877500BCBC2A /* Emoticon.swift */; };
+		E84EB8AA1E7B877500BCBC2A /* EmoticonAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8A51E7B877500BCBC2A /* EmoticonAttachment.swift */; };
+		E84EB8AB1E7B877500BCBC2A /* EmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8A61E7B877500BCBC2A /* EmoticonPackage.swift */; };
+		E84EB8AE1E7B880700BCBC2A /* EmoticonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8AD1E7B880700BCBC2A /* EmoticonView.swift */; };
+		E84EB8B21E7B8BAF00BCBC2A /* EmoticonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E84EB8B11E7B8BAF00BCBC2A /* EmoticonView.xib */; };
+		E84EB8B41E7B8C8D00BCBC2A /* EmoticonToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8B31E7B8C8D00BCBC2A /* EmoticonToolBar.swift */; };
+		E84EB8B61E7B947400BCBC2A /* EmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8B51E7B947400BCBC2A /* EmoticonCell.swift */; };
+		E84EB8B81E7B94AA00BCBC2A /* EmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8B71E7B94AA00BCBC2A /* EmoticonLayout.swift */; };
+		E84EB8BA1E7B94C700BCBC2A /* EmoticonTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EB8B91E7B94C700BCBC2A /* EmoticonTipView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2822DF2A12579C7506AF8832 /* Pods_KeyBoardDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeyBoardDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7A6373DB7DB9672C916BA6 /* Pods-KeyBoardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoardDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBoardDemo/Pods-KeyBoardDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D06F507037C559EBD29951D6 /* Pods-KeyBoardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeyBoardDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeyBoardDemo/Pods-KeyBoardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E84EB88B1E7B81A900BCBC2A /* KeyBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84EB88E1E7B81A900BCBC2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E84EB8901E7B81A900BCBC2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +37,17 @@
 		E84EB8951E7B81A900BCBC2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E84EB8981E7B81A900BCBC2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E84EB89A1E7B81A900BCBC2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E84EB8A11E7B877500BCBC2A /* Emoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticon.bundle; sourceTree = "<group>"; };
+		E84EB8A21E7B877500BCBC2A /* EmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonManager.swift; sourceTree = "<group>"; };
+		E84EB8A41E7B877500BCBC2A /* Emoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoticon.swift; sourceTree = "<group>"; };
+		E84EB8A51E7B877500BCBC2A /* EmoticonAttachment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonAttachment.swift; sourceTree = "<group>"; };
+		E84EB8A61E7B877500BCBC2A /* EmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonPackage.swift; sourceTree = "<group>"; };
+		E84EB8AD1E7B880700BCBC2A /* EmoticonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonView.swift; sourceTree = "<group>"; };
+		E84EB8B11E7B8BAF00BCBC2A /* EmoticonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmoticonView.xib; sourceTree = "<group>"; };
+		E84EB8B31E7B8C8D00BCBC2A /* EmoticonToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonToolBar.swift; sourceTree = "<group>"; };
+		E84EB8B51E7B947400BCBC2A /* EmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonCell.swift; sourceTree = "<group>"; };
+		E84EB8B71E7B94AA00BCBC2A /* EmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonLayout.swift; sourceTree = "<group>"; };
+		E84EB8B91E7B94C700BCBC2A /* EmoticonTipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmoticonTipView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A906EE3632128AE40B8FE9B6 /* Pods_KeyBoardDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E355561B81B145812973620 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2822DF2A12579C7506AF8832 /* Pods_KeyBoardDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DBE86D2BA007215A809A3A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D06F507037C559EBD29951D6 /* Pods-KeyBoardDemo.debug.xcconfig */,
+				8E7A6373DB7DB9672C916BA6 /* Pods-KeyBoardDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E84EB8821E7B81A900BCBC2A = {
 			isa = PBXGroup;
 			children = (
 				E84EB88D1E7B81A900BCBC2A /* KeyBoardDemo */,
 				E84EB88C1E7B81A900BCBC2A /* Products */,
+				8DBE86D2BA007215A809A3A7 /* Pods */,
+				3E355561B81B145812973620 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +100,8 @@
 		E84EB88D1E7B81A900BCBC2A /* KeyBoardDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E84EB8AC1E7B87CF00BCBC2A /* View */,
+				E84EB8A01E7B877500BCBC2A /* Emoticon */,
 				E84EB88E1E7B81A900BCBC2A /* AppDelegate.swift */,
 				E84EB8901E7B81A900BCBC2A /* ViewController.swift */,
 				E84EB8921E7B81A900BCBC2A /* Main.storyboard */,
@@ -64,6 +112,39 @@
 			path = KeyBoardDemo;
 			sourceTree = "<group>";
 		};
+		E84EB8A01E7B877500BCBC2A /* Emoticon */ = {
+			isa = PBXGroup;
+			children = (
+				E84EB8A11E7B877500BCBC2A /* Emoticon.bundle */,
+				E84EB8A21E7B877500BCBC2A /* EmoticonManager.swift */,
+				E84EB8A31E7B877500BCBC2A /* Model */,
+			);
+			path = Emoticon;
+			sourceTree = SOURCE_ROOT;
+		};
+		E84EB8A31E7B877500BCBC2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E84EB8A41E7B877500BCBC2A /* Emoticon.swift */,
+				E84EB8A51E7B877500BCBC2A /* EmoticonAttachment.swift */,
+				E84EB8A61E7B877500BCBC2A /* EmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E84EB8AC1E7B87CF00BCBC2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E84EB8B11E7B8BAF00BCBC2A /* EmoticonView.xib */,
+				E84EB8AD1E7B880700BCBC2A /* EmoticonView.swift */,
+				E84EB8B31E7B8C8D00BCBC2A /* EmoticonToolBar.swift */,
+				E84EB8B51E7B947400BCBC2A /* EmoticonCell.swift */,
+				E84EB8B71E7B94AA00BCBC2A /* EmoticonLayout.swift */,
+				E84EB8B91E7B94C700BCBC2A /* EmoticonTipView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E84EB89D1E7B81A900BCBC2A /* Build configuration list for PBXNativeTarget "KeyBoardDemo" */;
 			buildPhases = (
+				5DA7EC815C2B769810C40CC0 /* [CP] Check Pods Manifest.lock */,
 				E84EB8871E7B81A900BCBC2A /* Sources */,
 				E84EB8881E7B81A900BCBC2A /* Frameworks */,
 				E84EB8891E7B81A900BCBC2A /* Resources */,
+				618F44D4FEC6B970FAE78B98 /* [CP] Embed Pods Frameworks */,
+				7B567FA291948F37167FF5E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,20 +208,79 @@
 			buildActionMask = 2147483647;
 			files = (
 				E84EB8991E7B81A900BCBC2A /* LaunchScreen.storyboard in Resources */,
+				E84EB8A71E7B877500BCBC2A /* Emoticon.bundle in Resources */,
 				E84EB8961E7B81A900BCBC2A /* Assets.xcassets in Resources */,
 				E84EB8941E7B81A900BCBC2A /* Main.storyboard in Resources */,
+				E84EB8B21E7B8BAF00BCBC2A /* EmoticonView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DA7EC815C2B769810C40CC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		618F44D4FEC6B970FAE78B98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyBoardDemo/Pods-KeyBoardDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B567FA291948F37167FF5E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeyBoardDemo/Pods-KeyBoardDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E84EB8871E7B81A900BCBC2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84EB8AA1E7B877500BCBC2A /* EmoticonAttachment.swift in Sources */,
+				E84EB8B41E7B8C8D00BCBC2A /* EmoticonToolBar.swift in Sources */,
+				E84EB8A81E7B877500BCBC2A /* EmoticonManager.swift in Sources */,
+				E84EB8B61E7B947400BCBC2A /* EmoticonCell.swift in Sources */,
+				E84EB8AB1E7B877500BCBC2A /* EmoticonPackage.swift in Sources */,
 				E84EB8911E7B81A900BCBC2A /* ViewController.swift in Sources */,
+				E84EB8BA1E7B94C700BCBC2A /* EmoticonTipView.swift in Sources */,
 				E84EB88F1E7B81A900BCBC2A /* AppDelegate.swift in Sources */,
+				E84EB8AE1E7B880700BCBC2A /* EmoticonView.swift in Sources */,
+				E84EB8A91E7B877500BCBC2A /* Emoticon.swift in Sources */,
+				E84EB8B81E7B94AA00BCBC2A /* EmoticonLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +401,7 @@
 		};
 		E84EB89E1E7B81A900BCBC2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D06F507037C559EBD29951D6 /* Pods-KeyBoardDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
@@ -270,6 +414,7 @@
 		};
 		E84EB89F1E7B81A900BCBC2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7A6373DB7DB9672C916BA6 /* Pods-KeyBoardDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoardDemo/Info.plist;
@@ -299,6 +444,7 @@
 				E84EB89F1E7B81A900BCBC2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
