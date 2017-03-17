@@ -63,6 +63,31 @@ class ViewController: UIViewController {
         super.viewDidDisappear(animated)
         textView.resignFirstResponder()
     }
+    
+    @IBAction func show(_ sender: Any) {
+        print(attrStr)
+    }
+    
+    var attrStr: String{
+        
+        var result = String()
+        guard let attr = textView.attributedText else{
+            return ""
+        }
+        
+    attr.enumerateAttributes(in: NSRange(location: 0, length: attr.length), options: []) { (dict, rang, _) in
+//        print("rang:\(rang.location)--\(rang.length) dic:\(dict)")
+            if let attachment = dict["NSAttachment"] as? EmoticonAttachment{
+                result += attachment.chs ?? ""
+            }else{
+                let subStr = (attr.string as NSString).substring(with: rang)
+                result += subStr
+            }
+        }
+        
+        return result
+    }
+    
 
 
 }

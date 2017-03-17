@@ -36,7 +36,13 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="X4z-U6-Wmc" secondAttribute="bottom" id="hzo-Aq-d10"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zPy-KM-78P"/>
+                    <navigationItem key="navigationItem" id="zPy-KM-78P">
+                        <barButtonItem key="rightBarButtonItem" title="show" id="Hge-5f-m4l">
+                            <connections>
+                                <action selector="show:" destination="BYZ-38-t0r" id="qFB-mp-Iw6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="X4z-U6-Wmc" id="DRb-tY-erM"/>
                     </connections>
