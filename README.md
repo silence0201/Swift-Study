@@ -10,3 +10,7 @@
 2. [SimpleProject](SimpleProject):一些简单的功能项目
 3. [Swifter](Swifter):Swifter源码
 4. [Note](Note):学习笔记
+
+## Swift-Study
+
+Swift-Study is available under the MIT license. See the LICENSE file for more info.
