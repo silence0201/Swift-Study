@@ -6,6 +6,7 @@
 
 记录学习Swift过程中的相关内容,内容如下
 
-* [GuidedTour](官网文档学习)
-* [SimpleProject](一些简单的功能事件)
-* [Swifter](Swifter源码)
+1. [GuidedTour](GuidedTour):官网文档学习
+2. [SimpleProject](SimpleProject):一些简单的功能项目
+3. [Swifter](Swifter):Swifter源码
+4. [Note](Note):学习笔记
