@@ -8,6 +8,7 @@ class Employee {
     var salary: Double = 0
     var dept: Department? = Department()
     
+    
     struct Department {
         var no: Int = 10
         var name: String = "SALES"
