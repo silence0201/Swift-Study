@@ -6,6 +6,7 @@ var result = 0
 
 arr.enumerateObjects ({ (num, idx, stop) -> Void in
     result += num as! Int
+    
     if idx == 2 {
         stop.pointee = true
     }
