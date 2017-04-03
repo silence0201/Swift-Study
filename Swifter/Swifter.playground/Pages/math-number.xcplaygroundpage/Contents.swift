@@ -2,7 +2,7 @@
 import Foundation
 
 func circlePerimeter(radius: Double) -> Double {
-    return 2 * M_PI * radius
+    return 2 * Double.pi * radius
 }
 
 func yPosition(dy: Double, angle: Double) -> Double {
