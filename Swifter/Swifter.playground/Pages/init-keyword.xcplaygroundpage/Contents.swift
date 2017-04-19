@@ -8,10 +8,6 @@ class ClassA {
         numA = num
     }
     
-    init() {
-        numA = 0
-    }
-    
     convenience init(bigNum: Bool) {
         self.init(num: bigNum ? 10000 : 1)
     }
@@ -23,11 +19,6 @@ class ClassB: ClassA {
     required init(num: Int) {
         numB = num + 1
         super.init(num: num)
-    }
-    
-    override init() {
-        numB = 0
-        super.init()
     }
 }
 

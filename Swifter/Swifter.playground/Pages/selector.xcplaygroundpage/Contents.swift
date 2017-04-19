@@ -15,8 +15,12 @@ class MyObject: NSObject {
     
     func selectors() -> [Selector] {
         let someMethod = #selector(callMe)
+        let methods =  NSSelectorFromString("callMe")
+        let me = Selector("callMe")
+        
         let anotherMethod = #selector(callMeWithParam(obj:))
         let method = #selector(turn(by:speed:))
+        
 
         return [someMethod, anotherMethod, method]
     }

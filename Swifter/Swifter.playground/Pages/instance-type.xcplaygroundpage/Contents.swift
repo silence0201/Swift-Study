@@ -9,7 +9,6 @@ print(name1)
 
 
 let date2 = NSDate()
-
 let name2 = type(of: date2)
 print(name2)
 // 输出：

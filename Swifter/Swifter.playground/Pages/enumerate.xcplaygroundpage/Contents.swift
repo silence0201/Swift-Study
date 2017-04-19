@@ -6,7 +6,6 @@ var result = 0
 
 arr.enumerateObjects ({ (num, idx, stop) -> Void in
     result += num as! Int
-    
     if idx == 2 {
         stop.pointee = true
     }
@@ -21,4 +20,16 @@ for (idx, num) in [1,2,3,4,5].enumerated() {
         break
     }
 }
+
 print(result)
+
+class Person {
+    var name: String?
+}
+
+let p = Person()
+p.name = "小明"
+let ma = Unmanaged.passUnretained(p)
+print(ma.toOpaque())
+
+
