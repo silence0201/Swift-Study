@@ -13,6 +13,7 @@
 5. [Learn](Learn):读书代码
 6. [SwiftLearn](SwiftLearn):简单使用
 7. [Advanced Swift](AdvancedSwift):Advanced Swift
+8. [FunctionSwift](FunctionSwift):函数编程
 
 ## Swift-Study
 
