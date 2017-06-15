@@ -4,7 +4,7 @@ import Foundation
 
 #if swift(>=3.0)
 #else
-    // This is only for Swift 2.3 and earlier
+    // Swift之前的版本
     class MyManager1 {
     class var shared : MyManager1 {
     struct Static {
@@ -42,6 +42,7 @@ private let sharedInstance = MyManager3()
 
 MyManager3.sharedManager
 
+// 现在用这种
 class MyManager  {
     static let sharedManager = MyManager()
     private init() {}
